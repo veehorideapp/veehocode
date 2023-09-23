@@ -6,7 +6,7 @@ try {
     $mobileNumber = isset($_POST['mobileNumber']) ? $_POST['mobileNumber'] : '';
 
     // SQL query to fetch user based on mobile number
-    $sql = "SELECT * FROM users WHERE mobileNumber = :mobileNumber";
+    $sql = "SELECT * FROM users WHERE username = :mobileNumber";
 
     // Prepare and execute the SQL query
     $stmt = $conn->prepare($sql);
