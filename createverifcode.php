@@ -20,7 +20,7 @@ if (isset($_POST['email'])) {
 
     // SMTP configuration (adjust these settings based on your email provider)
     $mail->isSMTP();
-    $mail->Host = ‘veehoride@hotmail.com’;
+    $mail->Host = ‘smtp.office365.com’;
     $mail->SMTPAuth = true;
     $mail->Username = 'veehoride@hotmail.com’';
     $mail->Password = ‘ridesharing1;
