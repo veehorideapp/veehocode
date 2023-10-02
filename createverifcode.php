@@ -5,9 +5,6 @@ header('Content-Type: application/json'); // Set the content type to JSON
 require 'PHPMailer-master/src/PHPMailer.php';
 require 'PHPMailer-master/src/SMTP.php';
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-
 // Function to generate a random 6-digit verification code
 function generateVerificationCode() {
     return mt_rand(100000, 999999);
