@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json'); // Set the content type to JSON
-//require 'vendor/autoload.php'; // Include PHPMailer
+require 'vendor/autoload.php'; // Include PHPMailer
 
 // Function to generate a random 6-digit verification code
 function generateVerificationCode() {
