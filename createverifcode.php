@@ -31,7 +31,7 @@ if (isset($_POST['email'])) {
     $mail->SMTPSecure = 'tls'; // or 'ssl' if required
 
     // Sender and recipient email addresses
-    $mail->setFrom(‘veehoride’, ‘Veeho’);
+    $mail->setFrom('veehoride', 'Veeho');
     $mail->addAddress($email);
 
     // Email subject and message
