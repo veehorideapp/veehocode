@@ -25,7 +25,7 @@ if (isset($_POST['email'])) {
     $mail->isSMTP();
     $mail->Host = ‘smtp-mail.outlook.com’;
     $mail->SMTPAuth = true;
-    $mail->Username = 'veehoride@hotmail.com’';
+    $mail->Username = 'veehoride@hotmail.com’;
     $mail->Password = ‘ridesharing1';
     $mail->Port = 587; // Adjust the port as needed
     $mail->SMTPSecure = 'tls'; // or 'ssl' if required
