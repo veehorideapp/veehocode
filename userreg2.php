@@ -57,7 +57,7 @@ try {
     echo "Database Error: " . $e->getMessage();
     exit;
 } finally {
-     Close the database connection
+    // Close the database connection
     $conn = null;
 }
 ?>
