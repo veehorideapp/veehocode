@@ -41,7 +41,7 @@ try {
 
     // Prepare and execute the SQL query
     $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':mobileNumber', $mobileNumber, PDO::PARAM_STR);
+  //  $stmt->bindParam(':mobileNumber', $mobileNumber, PDO::PARAM_STR);
     $stmt->execute();
 
     // Fetch the first matching user as an associative array
