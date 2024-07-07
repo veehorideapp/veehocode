@@ -35,7 +35,7 @@ try {
 
     // Hash the password using bcrypt with automatically generated salt
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-    Echo password_hash;
+    //Echo password_hash;
     // SQL query to fetch user based on mobile number
     $sql = "INSERT INTO  users(username,email,password_hash,first_name,last_name,registration_date,last_login,is_active,role_id,user_type,mobile_number,verification_code) VALUES('$username','$email','$hashed_password','$forename','$surname',GETDATE(),GETDATE(),0,' ','RIDER','$userphoneno','$verificationcode')";
 
