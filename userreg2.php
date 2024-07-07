@@ -30,7 +30,7 @@ try {
     $usertype = isset($_POST['userType']) ? $_POST['UserType'] : '';
     $userphoneno = isset($_POST['UserPhoneNo']) ? $_POST['UserPhoneNo'] : '';
     $regtype = isset($_POST['RegType']) ? $_POST['RegType'] : '';
-    $verificationcode = isset($_POST['§§§§§§§§§§§§§§§']) ? $_POST['VerifCode'] : '';
+    $verificationcode = isset($_POST['VerifCode']) ? $_POST['VerifCode'] : '';
     $email = isset($_POST['EmailAdress']) ? $_POST['EmailAddress'] : '';
 
     // Hash the password using bcrypt with automatically generated salt
