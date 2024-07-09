@@ -55,9 +55,9 @@ try {
     // Handle database connection errors
     echo "Database Error: " . $e->getMessage();
     exit;
-//} finally {
+} finally {
     // Close the database connection
     $conn = null;
-//}
+}
 ?>
 
