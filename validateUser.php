@@ -13,7 +13,7 @@ $sql = "SELECT `Username`,`Password`,`Forename`,`Surname`,`UserType`,`EmailAddre
 WHERE `Username`='$username'";
 
 // Prepare and execute the SQL query
-$stmt = $con->prepare($sql);
+$stmt = $conn->prepare($sql);
 $stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 
