@@ -19,7 +19,7 @@ $stmt->execute();
 
 // Fetch the first matching user as an associative array
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
-    echo "User:$user";
+    echo $user;
 //echo json_encode($user);
 
 } catch (PDOException $e) {
