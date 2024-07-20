@@ -13,11 +13,11 @@ $password = isset($_POST['password']) ? $_POST['password'] : '';
  
 // This SQL statement selects ALL from the table 'Tariff'
 $sql = "SELECT 'Username','Password','Forename','Surname','UserType','EmailAddress','Registered','LoggedIn' FROM users
-WHERE 'Username'=':username'";
+WHERE 'Username'=07898765476";
 
 // Prepare and execute the SQL query
 $stmt = $conn->prepare($sql);
-$stmt->bindParam(':username', $username, PDO::PARAM_STR);
+//$stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 
 // Fetch the first matching user as an associative array
