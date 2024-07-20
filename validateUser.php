@@ -23,7 +23,7 @@ $stmt->execute();
 // Fetch the first matching user as an associative array
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
     
-    if $user {
+    if ($user) {
     //echo $user;
 echo json_encode($user);
      }   else {
