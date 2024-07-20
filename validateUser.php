@@ -4,14 +4,15 @@ try {
 
     $conn = new PDO("sqlsrv:server = tcp:veehodbserver.database.windows.net,1433; Database = veeho_DB", "Veeho_Admin", "Mikhael1!");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
 
 $username = isset($_POST['username']) ? $_POST['username'] : '';
 
 $password = isset($_POST['password']) ? $_POST['password'] : '';
  
 // This SQL statement selects ALL from the table 'Tariff'
-$sql = "SELECT `Username`,`Password`,`Forename`,`Surname`,`UserType`,`EmailAddress`,`Registered`,`LoggedIn` FROM `Users` 
-WHERE `Username`='$username'";
+$sql = "SELECT 'Username','Password','Forename','Surname','UserType','EmailAddress','Registered','LoggedIn' FROM 'Users'
+WHERE 'Username'='$username'";
 
 // Prepare and execute the SQL query
 $stmt = $conn->prepare($sql);
