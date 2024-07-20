@@ -11,7 +11,7 @@ $username = isset($_POST['username']) ? $_POST['username'] : '';
 $password = isset($_POST['password']) ? $_POST['password'] : '';
  
 // This SQL statement selects ALL from the table 'Tariff'
-$sql = "SELECT 'Username','Password','Forename','Surname','UserType','EmailAddress','Registered','LoggedIn' FROM 'Users'
+$sql = "SELECT 'Username','Password','Forename','Surname','UserType','EmailAddress','Registered','LoggedIn' FROM users
 WHERE 'Username'='$username'";
 
 // Prepare and execute the SQL query
