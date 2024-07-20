@@ -20,7 +20,7 @@ $stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 
 // Fetch the first matching user as an associative array
-$user = $stmt->fetchall(PDO::FETCH_ASSOC);
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
     echo $user;
 //echo json_encode($user);
 
