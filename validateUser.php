@@ -33,39 +33,4 @@ exit;
 $conn = null;
 }
 
-
-
-
-
- // Check if there are results
-//if ($result = mysqli_query($con, $sql))
-//  {
-//  $row=mysqli_fetch_object($result);
-//  $hash = $row->Password;
-//  $usertype = $row->UserType
-//  $resultArray [] =$row;
- // echo $hash;
-	
-// if (password_verify($password, $hash))
-// {
-//if ($usertype ='DRIVER') {
-// $sql1 = "SELECT `DriverNumber`,`DriverForename`,`DriverSurname`,`DocVerified` FROM `Driver` WHERE `DriverNumber` = '$username'";
-
-// if ($result1 = mysqli_query($con, $sql1))
-//{
-	// $row1=mysqli_fetch_object($result1);
-	 //$resultArray [] =$row1;
-//}
-
-//}
-
-//} else {
-  // $resultArray[] = 'Invalid password';
-//}
-//}
-
-
- 
-// Close connections
-// mysqli_close($con);
 ?>
