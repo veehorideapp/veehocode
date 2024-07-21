@@ -29,7 +29,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 if ($user) {
     $response = array("data" => array(
             "username" => $username,
-            "email" => "EmailAddress")
+            )
 echo json_encode($response);
     }   else {
          echo json_encode(array("error" => "0 results"));
