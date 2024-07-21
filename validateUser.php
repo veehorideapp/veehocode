@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json');
-echo "starting User Validate";
+
 try {
 
     $conn = new PDO("sqlsrv:server = tcp:veehodbserver.database.windows.net,1433; Database = veeho_DB", "Veeho_Admin", "Mikhael1!");
@@ -30,7 +30,7 @@ if ($user) {
     $response = array("data" => array(
             "username" => $username,
             )
-echo json_encode($response);
+echo json_encode($user);
     }   else {
          echo json_encode(array("error" => "0 results"));
  }
