@@ -13,7 +13,7 @@ $password = $_GET['password'];
  
 // This SQL statement selects ALL from the table 'Tariff'
 $sql = "SELECT 'Username','Password','Forename','Surname','UserType','EmailAddress','Registered','LoggedIn' FROM users
-WHERE Username=:username";
+WHERE 'Username'=:username";
 
 // Prepare and execute the SQL query
 $stmt = $conn->prepare($sql);
