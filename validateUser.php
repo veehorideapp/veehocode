@@ -20,7 +20,7 @@ WHERE Username='07898765476'";
 
 // Prepare and execute the SQL query
 $stmt = $conn->prepare($sql1);
-//$stmt->bindParam(':username', $username, PDO::PARAM_STR);
+$stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 
 // Fetch the first matching user as an associative array
