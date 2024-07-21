@@ -27,9 +27,6 @@ $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
     
 if ($user) {
-    $response = array("data" => array(
-            "username" => $username,
-            )
 echo json_encode($user);
     }   else {
          echo json_encode(array("error" => "0 results"));
