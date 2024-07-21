@@ -10,7 +10,7 @@ try {
 $username = $_GET['username'];
 
 $password = $_GET['password'];
- 
+ echo $username;
 // This SQL statement selects ALL from the table 'Tariff'
 $sql = "SELECT 'Username','Password','Forename','Surname','UserType','EmailAddress','Registered','LoggedIn' FROM users
 WHERE 'Username'=:username";
