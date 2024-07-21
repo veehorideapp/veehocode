@@ -15,8 +15,11 @@ $password = $_GET['password'];
 $sql = "SELECT 'Username','Password','Forename','Surname','UserType','EmailAddress','Registered','LoggedIn' FROM users
 WHERE 'Username'=:username";
 
+    $sql1 = "SELECT * FROM users
+    WHERE Username=:username";
+    
 // Prepare and execute the SQL query
-$stmt = $conn->prepare($sql);
+$stmt = $conn->prepare($sql1);
 $stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 
