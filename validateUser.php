@@ -15,7 +15,7 @@ $password = isset($_POST['password']) ? $_POST['password'] : '';
 $sql = "SELECT 'Username','Password','Forename','Surname','UserType','EmailAddress','Registered','LoggedIn' FROM users
 WHERE Username='07898765476'";
     
-    $sql1 = "SELECT * FROM users
+    $sql1 = "SELECT Username, Forename, Surname FROM users
     WHERE Username=:username";
 
 // Prepare and execute the SQL query
