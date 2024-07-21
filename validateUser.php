@@ -13,7 +13,7 @@ $password = isset($_POST['password']) ? $_POST['password'] : '';
  
 // This SQL statement selects ALL from the table 'Tariff'
 $sql = "SELECT 'Username','Password','Forename','Surname','UserType','EmailAddress','Registered','LoggedIn' FROM users
-WHERE Username='07898765476';
+WHERE Username='07898765476'";
 
 // Prepare and execute the SQL query
 $stmt = $conn->prepare($sql);
@@ -23,12 +23,11 @@ $stmt->execute();
 // Fetch the first matching user as an associative array
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
     
-    if ($user) {
-    //echo $user;
+if ($user) {
 echo json_encode($user);
-     }   else {
+    }   else {
          echo json_encode(array("error" => "0 results"));
-     }
+ }
 
 } catch (PDOException $e) {
 // Handle database connection errors
