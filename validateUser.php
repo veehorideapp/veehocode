@@ -26,7 +26,7 @@ $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
     
 if ($user) {
-    $hash=$row("password_hash");
+    $hash=$user("password_hash");
     if(password_verify($password,$hash)) {
     echo json_encode($user);
        } else {
