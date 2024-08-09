@@ -30,7 +30,7 @@ if ($user) {
     if(password_verify($password,$row("password_hash")) {
     echo json_encode($user);
        } else {
-       echo json_encode("Invalid Password"));
+       echo json_encode("Invalid Password");
        }
        
     }   else {
