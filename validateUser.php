@@ -11,11 +11,10 @@ $username = isset($_POST['username']) ? $_POST['username'] : '';
 
 $password = isset($_POST['password']) ? $_POST['password'] : '';
  
-// This SQL statement selects ALL from the table 'Tariff'
-$sql = "SELECT 'Username','Password','Forename','Surname','UserType','EmailAddress','Registered','LoggedIn' FROM users
-WHERE Username='07898765476'";
+// This SQL statement selects ALL from the table 'Users'
     
-    $sql1 = "SELECT username, email, first_name, last_name FROM users
+    $sql1 = "SELECT username, email, first_name, last_name,registration_date,last_login,is_active,user_type,mobile_number,password_hash
+    FROM users
     WHERE Username=:username";
 
 // Prepare and execute the SQL query
@@ -27,7 +26,13 @@ $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
     
 if ($user) {
+    
+    if(password_verify($password,$row("password_hash")) {
     echo json_encode($user);
+       } else {
+       echo json_encode("Invalid Password"));
+       }
+       
     }   else {
          echo json_encode(array("error" => "0 results"));
  }
